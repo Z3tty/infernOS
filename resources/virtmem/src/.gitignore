@@ -1,0 +1,26 @@
+# Object files
+*.o
+
+# Binaries
+bootblock
+createimage
+image
+kernel
+process1
+process2
+process3
+process4
+shell
+asmdefs
+
+# Compiler generated assembly
+entry-pp.s
+
+# Compiler generated defines
+asmsyms.h
+
+# Dependency table
+.depend
+
+# Given files
+!given/*

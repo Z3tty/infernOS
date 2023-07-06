@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+# -*-perl-*-
+
+$usbfloppy = "/dev/sda";
+$floppy = "/dev/fd0";
+
+if (-w $usbfloppy && (stat(_))[5] == getgrnam("floppy")) {
+    print "$usbfloppy\n";
+} elsif (-w $floppy) {
+    print "$floppy\n";
+}
+
+

@@ -1,0 +1,24 @@
+# /usr/share/bochs is where bochs files are likely located on your own machine.
+floppya: 1_44=image, status=inserted
+
+boot: floppy
+
+cpu: count=1, ips=10000000, reset_on_triple_fault=1
+megs: 32
+
+#floppy_bootsig_check: disabled=1
+log: /dev/stdout
+panic: action=ask
+error: action=report
+info: action=report
+debug: action=ignore
+debugger_log: -
+com1: enabled=0
+parport1: enabled=0
+vga: update_freq=60
+keyboard: serial_delay=250, paste_delay=100000
+#floppy_command_delay: 500
+mouse: enabled=0
+private_colormap: enabled=0
+
+#gdbstub: enabled=1, port=1234, text_base=0, data_base=0, bss_base=0

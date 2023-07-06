@@ -1,0 +1,16 @@
+# Object files
+*.o
+
+# Binaries
+bootblock
+createimage
+image
+kernel
+process1
+process2
+
+# Compiler generated assembly
+entry-pp.s
+
+# Dependency table
+.depend
