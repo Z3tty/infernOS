@@ -1,8 +1,0 @@
-# Object files
-*.o
-
-# Binaries
-bootblock
-createimage
-image
-kernel
